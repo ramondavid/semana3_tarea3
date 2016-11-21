@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/marcianito_terminado"
+    android:id="@+id/principal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:id="@+id/Titulo"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <TextView
+            android:text="@string/bienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/Bienvenido"
+            android:gravity="center_vertical|center"
+            android:layout_weight="0.17"
+            android:textAppearance="@android:style/TextAppearance.WindowTitle"
+            android:textSize="38sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/boton"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:text="@string/entrar"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:background="@drawable/boton_marco"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>
